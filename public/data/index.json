@@ -1,0 +1,67 @@
+{
+  "sg": {
+    "country": "sg",
+    "name": "Singapore",
+    "domain": "shopee.sg",
+    "currency": "SGD",
+    "supported": true,
+    "filter": "locations=Korea",
+    "collected": "2026-03-30T11:22:05.734Z",
+    "totalProducts": 3357,
+    "totalSellers": 755,
+    "categories": {
+      "big": [
+        [
+          "Beauty & Personal Care",
+          3357
+        ]
+      ],
+      "mid": [
+        [
+          "Feminine Care",
+          499
+        ],
+        [
+          "Nails",
+          498
+        ],
+        [
+          "Beauty Devices & Tools",
+          497
+        ],
+        [
+          "Oral Care",
+          496
+        ],
+        [
+          "Men's Grooming",
+          495
+        ],
+        [
+          "Makeup",
+          462
+        ],
+        [
+          "Others",
+          286
+        ],
+        [
+          "Skincare",
+          51
+        ],
+        [
+          "Bath & Body",
+          44
+        ],
+        [
+          "Women's Hair Care",
+          25
+        ],
+        [
+          "Fragrances",
+          4
+        ]
+      ]
+    }
+  }
+}
