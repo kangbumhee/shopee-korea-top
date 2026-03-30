@@ -1,0 +1,30 @@
+{
+  "name": "shopee-korea-top",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "collect": "node scripts/collect.mjs",
+    "collect:sg": "node scripts/collect.mjs sg",
+    "collect:my": "node scripts/collect.mjs my",
+    "collect:th": "node scripts/collect.mjs th",
+    "collect:ph": "node scripts/collect.mjs ph",
+    "collect:tw": "node scripts/collect.mjs tw",
+    "collect:vn": "node scripts/collect.mjs vn",
+    "collect:br": "node scripts/collect.mjs br",
+    "collect:mx": "node scripts/collect.mjs mx",
+    "collect:all": "node scripts/collect.mjs all"
+  },
+  "dependencies": {
+    "next": "^14.2.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.3.0",
+    "typescript": "^5.4.0"
+  }
+}
