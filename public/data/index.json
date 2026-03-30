@@ -6,9 +6,9 @@
     "currency": "SGD",
     "supported": true,
     "filter": "locations=Korea",
-    "collected": "2026-03-30T11:53:10.043Z",
-    "totalProducts": 40310,
-    "totalSellers": 1635,
+    "collected": "2026-03-30T12:08:55.956Z",
+    "totalProducts": 44397,
+    "totalSellers": 1658,
     "categories": {
       "big": [
         [
@@ -48,6 +48,10 @@
           2139
         ],
         [
+          "Women's Shoes",
+          2011
+        ],
+        [
           "Health & Wellness",
           1946
         ],
@@ -58,6 +62,10 @@
         [
           "Men's Wear",
           1563
+        ],
+        [
+          "Travel & Luggage",
+          1205
         ],
         [
           "Mobile & Gadgets",
@@ -80,6 +88,14 @@
           637
         ],
         [
+          "Automotive",
+          586
+        ],
+        [
+          "Men's Shoes",
+          582
+        ],
+        [
           "Watches",
           546
         ],
@@ -88,18 +104,26 @@
           504
         ],
         [
-          "Women's Shoes",
-          360
-        ],
-        [
           "Video Games",
           239
+        ],
+        [
+          "Miscellaneous",
+          34
+        ],
+        [
+          "Dining, Travel & Services",
+          29
         ]
       ],
       "mid": [
         [
           "Others",
-          1352
+          1377
+        ],
+        [
+          "Sneakers",
+          705
         ],
         [
           "Backpacks",
@@ -170,6 +194,10 @@
           500
         ],
         [
+          "Travel Accessories",
+          500
+        ],
+        [
           "Wallets & Cardholders",
           500
         ],
@@ -179,6 +207,10 @@
         ],
         [
           "Watches Accessories",
+          500
+        ],
+        [
+          "Travel Bags & Backpacks",
           500
         ],
         [
@@ -262,6 +294,10 @@
           494
         ],
         [
+          "Flats",
+          494
+        ],
+        [
           "Supplements",
           490
         ],
@@ -330,16 +366,16 @@
           383
         ],
         [
-          "Sneakers",
-          360
-        ],
-        [
           "Lighting",
           353
         ],
         [
           "Bakery",
           353
+        ],
+        [
+          "Slippers",
+          344
         ],
         [
           "Sweaters & Cardigans",
@@ -360,6 +396,10 @@
         [
           "Skirts",
           323
+        ],
+        [
+          "Car Accessories",
+          314
         ],
         [
           "Men Sports Attire & Shoes",
@@ -402,6 +442,10 @@
           239
         ],
         [
+          "Sandals",
+          231
+        ],
+        [
           "Maternity Care",
           217
         ],
@@ -422,12 +466,28 @@
           206
         ],
         [
+          "Shoe Accessories",
+          206
+        ],
+        [
           "Swimming & Snorkelling",
           204
         ],
         [
+          "Luggage Accessories",
+          197
+        ],
+        [
           "Gadgets",
           196
+        ],
+        [
+          "Boots",
+          192
+        ],
+        [
+          "Heels",
+          180
         ],
         [
           "Denim",
@@ -438,8 +498,16 @@
           172
         ],
         [
+          "Car Care",
+          171
+        ],
+        [
           "Shorts & Bermudas",
           171
+        ],
+        [
+          "Sandals & Flip-Flops",
+          163
         ],
         [
           "Instant & Film Cameras",
@@ -574,6 +642,10 @@
           40
         ],
         [
+          "Loafers",
+          37
+        ],
+        [
           "Women's Watches",
           37
         ],
@@ -590,7 +662,19 @@
           34
         ],
         [
+          "Miscellaneous",
+          34
+        ],
+        [
+          "Car Replacement Parts",
+          34
+        ],
+        [
           "Underwear",
+          33
+        ],
+        [
+          "Car Electronics",
           33
         ],
         [
@@ -600,6 +684,10 @@
         [
           "Beachwear",
           31
+        ],
+        [
+          "Dining, Travel & Services",
+          29
         ],
         [
           "Networking",
@@ -638,6 +726,10 @@
           17
         ],
         [
+          "Motorcycles & Scooters",
+          16
+        ],
+        [
           "Components",
           13
         ],
@@ -650,8 +742,16 @@
           13
         ],
         [
+          "Car Oil & Fluids",
+          12
+        ],
+        [
           "Infant Milk Formula",
           12
+        ],
+        [
+          "Formal Shoes",
+          11
         ],
         [
           "Traditional Wear",
@@ -660,6 +760,14 @@
         [
           "Unisex Watches",
           8
+        ],
+        [
+          "Luggage",
+          8
+        ],
+        [
+          "Brogues & Oxford",
+          7
         ],
         [
           "Action & Video Cameras",
@@ -691,6 +799,10 @@
         ],
         [
           "Fragrances",
+          4
+        ],
+        [
+          "Services & Installation",
           4
         ],
         [
