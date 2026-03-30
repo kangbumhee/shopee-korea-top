@@ -46,7 +46,7 @@ export default function Home() {
   const [catBig, setCatBig] = useState('');
   const [catMid, setCatMid] = useState('');
   const [sortBy, setSortBy] = useState('sold_d');
-  const [minSold, setMinSold] = useState(100);
+  const [minSold, setMinSold] = useState(0);
   const [excludeMall, setExcludeMall] = useState(false);
   const [onlyPreferred, setOnlyPreferred] = useState(false);
   const [showCount, setShowCount] = useState(200);
@@ -89,6 +89,21 @@ export default function Home() {
     f.sort((a, b) => dir === 'a' ? fn(a) - fn(b) : fn(b) - fn(a));
     return f;
   }, [data, search, catBig, catMid, sortBy, minSold, excludeMall, onlyPreferred]);
+
+  // 대분류 선택 시 해당 중분류만 필터링
+  const filteredMidCats = useMemo(() => {
+    if (!data?.products) return data?.meta?.categories?.mid || [];
+    if (!catBig) return data.meta.categories.mid || [];
+
+    const midCount: Record<string, number> = {};
+    data.products.forEach(p => {
+      if (p.catBig === catBig) {
+        const m = p.cat || '기타';
+        midCount[m] = (midCount[m] || 0) + 1;
+      }
+    });
+    return Object.entries(midCount).sort((a, b) => b[1] - a[1]) as [string, number][];
+  }, [data, catBig]);
 
   const handleScroll = useCallback(() => {
     if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 800) {
@@ -161,9 +176,9 @@ export default function Home() {
             <option key={name} value={name}>{name} ({cnt})</option>
           ))}
         </select>
-        <select value={catMid} onChange={e => { setCatMid(e.target.value); setCatBig(''); }}>
+        <select value={catMid} onChange={e => { setCatMid(e.target.value); }}>
           <option value="">전체 중분류</option>
-          {(meta?.categories?.mid || []).map(([name, cnt]) => (
+          {filteredMidCats.map(([name, cnt]) => (
             <option key={name} value={name}>{name} ({cnt})</option>
           ))}
         </select>
