@@ -48,8 +48,8 @@ export default function Home() {
   const [catSmall, setCatSmall] = useState('');
   const [minSold, setMinSold] = useState(0);
   const [sortBy, setSortBy] = useState('sold');
-  const [showMall, setShowMall] = useState(false);
-  const [showPref, setShowPref] = useState(false);
+  const [showMall, setShowMall] = useState<'all' | 'only' | 'exclude'>('all');
+  const [showPref, setShowPref] = useState<'all' | 'only' | 'exclude'>('all');
   const [page, setPage] = useState(0);
   const PER_PAGE = 200;
 
@@ -118,18 +118,23 @@ export default function Home() {
   // 필터링된 상품
   const filtered = useMemo(() => {
     let list = products;
-    if (search) {
-      const s = search.toLowerCase();
-      list = list.filter(p =>
-        p.nm.toLowerCase().includes(s) || p.sn.toLowerCase().includes(s)
-      );
+    if (search.trim()) {
+      const terms = search.toLowerCase().trim().split(/\s+/);
+      list = list.filter(p => {
+        const name = (p.nm || '').toLowerCase();
+        const seller = (p.sn || '').toLowerCase();
+        const combined = name + ' ' + seller;
+        return terms.every(term => combined.includes(term));
+      });
     }
     if (catBig) list = list.filter(p => p.catBig === catBig);
     if (catMid) list = list.filter(p => (p.catMid || p.cat) === catMid);
     if (catSmall) list = list.filter(p => p.cat === catSmall);
     if (minSold > 0) list = list.filter(p => p.sold >= minSold);
-    if (showMall) list = list.filter(p => p.off);
-    if (showPref) list = list.filter(p => p.pref);
+    if (showMall === 'only') list = list.filter(p => p.off);
+    if (showMall === 'exclude') list = list.filter(p => !p.off);
+    if (showPref === 'only') list = list.filter(p => p.pref);
+    if (showPref === 'exclude') list = list.filter(p => !p.pref);
 
     list = [...list].sort((a, b) => {
       if (sortBy === 'sold') return b.sold - a.sold;
@@ -158,6 +163,15 @@ export default function Home() {
   };
   const handleSmallChange = (v: string) => {
     setCatSmall(v);
+    setPage(0);
+  };
+
+  const toggleMall = () => {
+    setShowMall(prev => (prev === 'all' ? 'only' : prev === 'only' ? 'exclude' : 'all'));
+    setPage(0);
+  };
+  const togglePref = () => {
+    setShowPref(prev => (prev === 'all' ? 'only' : prev === 'only' ? 'exclude' : 'all'));
     setPage(0);
   };
 
@@ -365,39 +379,35 @@ export default function Home() {
 
             <button
               type="button"
-              onClick={() => {
-                setShowMall(!showMall);
-                setPage(0);
-              }}
+              onClick={toggleMall}
               style={{
                 padding: '8px 12px',
                 borderRadius: 6,
                 border: 'none',
                 cursor: 'pointer',
                 fontSize: 13,
-                background: showMall ? '#ff6633' : '#1a1a2e',
-                color: showMall ? '#fff' : '#888',
+                background: showMall === 'only' ? '#ff6633' : showMall === 'exclude' ? '#333' : '#1a1a2e',
+                color: showMall === 'all' ? '#888' : '#fff',
+                textDecoration: showMall === 'exclude' ? 'line-through' : 'none',
               }}
             >
-              Mall직영
+              {showMall === 'only' ? 'Mall직영' : showMall === 'exclude' ? 'Mall제외' : 'Mall직영'}
             </button>
             <button
               type="button"
-              onClick={() => {
-                setShowPref(!showPref);
-                setPage(0);
-              }}
+              onClick={togglePref}
               style={{
                 padding: '8px 12px',
                 borderRadius: 6,
                 border: 'none',
                 cursor: 'pointer',
                 fontSize: 13,
-                background: showPref ? '#ff6633' : '#1a1a2e',
-                color: showPref ? '#fff' : '#888',
+                background: showPref === 'only' ? '#ff6633' : showPref === 'exclude' ? '#333' : '#1a1a2e',
+                color: showPref === 'all' ? '#888' : '#fff',
+                textDecoration: showPref === 'exclude' ? 'line-through' : 'none',
               }}
             >
-              Preferred
+              {showPref === 'only' ? 'Preferred' : showPref === 'exclude' ? 'Pref제외' : 'Preferred'}
             </button>
 
             <button
