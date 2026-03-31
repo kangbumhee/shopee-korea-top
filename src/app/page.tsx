@@ -100,15 +100,15 @@ export default function Home() {
     return Object.entries(map).sort((a, b) => b[1] - a[1]);
   }, [products, catBig]);
 
-  // 소분류 목록 (선택된 중분류에 따라)
+  // 소분류 목록 — cat이 catMid와 같아도 집계 (드롭다운 비는 버그 방지)
   const smallCats = useMemo(() => {
     let filtered = products;
     if (catBig) filtered = filtered.filter(p => p.catBig === catBig);
     if (catMid) filtered = filtered.filter(p => (p.catMid || p.cat) === catMid);
     const map: Record<string, number> = {};
     filtered.forEach(p => {
-      const k = p.cat || '기타';
-      if (k !== (p.catMid || '') && k.length > 0) {
+      const k = p.cat || '';
+      if (k.length > 0) {
         map[k] = (map[k] || 0) + 1;
       }
     });
@@ -294,7 +294,7 @@ export default function Home() {
               ))}
             </select>
 
-            {smallCats.length > 0 && (
+            {smallCats.length > 1 && (
               <select
                 value={catSmall}
                 onChange={e => handleSmallChange(e.target.value)}
@@ -307,7 +307,9 @@ export default function Home() {
                   fontSize: 13,
                 }}
               >
-                <option value="">전체 소분류</option>
+                <option value="">
+                  전체 소분류 ({smallCats.reduce((s, c) => s + c[1], 0)})
+                </option>
                 {smallCats.map(([name, cnt]) => (
                   <option key={name} value={name}>
                     {name} ({cnt})
