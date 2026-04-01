@@ -46,6 +46,7 @@ export default function Home() {
   const [catBig, setCatBig] = useState('');
   const [catMid, setCatMid] = useState('');
   const [catSmall, setCatSmall] = useState('');
+  const [minPrice, setMinPrice] = useState(0);
   const [minSold, setMinSold] = useState(0);
   const [sortBy, setSortBy] = useState('sold');
   const [showMall, setShowMall] = useState<'all' | 'only' | 'exclude'>('all');
@@ -131,6 +132,7 @@ export default function Home() {
     if (catMid) list = list.filter(p => (p.catMid || p.cat) === catMid);
     if (catSmall) list = list.filter(p => p.cat === catSmall);
     if (minSold > 0) list = list.filter(p => p.sold >= minSold);
+    if (minPrice > 0) list = list.filter(p => p.pr >= minPrice);
     if (showMall === 'only') list = list.filter(p => p.off);
     if (showMall === 'exclude') list = list.filter(p => !p.off);
     if (showPref === 'only') list = list.filter(p => p.pref);
@@ -145,7 +147,7 @@ export default function Home() {
       return 0;
     });
     return list;
-  }, [products, search, catBig, catMid, catSmall, minSold, sortBy, showMall, showPref]);
+  }, [products, search, catBig, catMid, catSmall, minSold, minPrice, sortBy, showMall, showPref]);
 
   const paged = filtered.slice(0, (page + 1) * PER_PAGE);
   const hasMore = paged.length < filtered.length;
@@ -331,6 +333,25 @@ export default function Home() {
                 ))}
               </select>
             )}
+
+            <input
+              type="number"
+              placeholder="최소 가격 (SGD)"
+              value={minPrice || ''}
+              onChange={e => {
+                setMinPrice(Number(e.target.value) || 0);
+                setPage(0);
+              }}
+              style={{
+                padding: '8px 12px',
+                borderRadius: 6,
+                border: '1px solid #333',
+                background: '#111',
+                color: '#fff',
+                width: 130,
+                fontSize: 13,
+              }}
+            />
 
             <select
               value={String(minSold)}
