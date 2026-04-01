@@ -2026,5 +2026,28 @@
         "top": ""
       }
     ]
+  },
+  "my": {
+    "country": "my",
+    "name": "Malaysia",
+    "domain": "shopee.com.my",
+    "currency": "MYR",
+    "supported": true,
+    "filter": "SG-sellers+brands+Overseas→Korea",
+    "collected": "2026-04-01T10:33:22.963Z",
+    "totalProducts": 182,
+    "totalSellers": 95,
+    "apiCalls": 3154,
+    "apiFails": 0,
+    "elapsed": "64min",
+    "categories": {
+      "big": [
+        [
+          "keyword",
+          182
+        ]
+      ],
+      "mid": []
+    }
   }
 }
