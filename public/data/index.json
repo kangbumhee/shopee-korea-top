@@ -879,5 +879,490 @@
         ]
       ]
     }
+  },
+  "ph": {
+    "country": "ph",
+    "name": "Philippines",
+    "domain": "shopee.ph",
+    "currency": "PHP",
+    "supported": true,
+    "filter": "locations=Overseas→Korea (5-sort merge)",
+    "collected": "2026-04-01T04:10:28.994Z",
+    "totalProducts": 1903,
+    "totalSellers": 463,
+    "categories": {
+      "big": [
+        [
+          "Babies & Kids",
+          426
+        ],
+        [
+          "Pet Care",
+          282
+        ],
+        [
+          "Women's Apparel",
+          270
+        ],
+        [
+          "Women's Shoes",
+          210
+        ],
+        [
+          "Home & Living",
+          173
+        ],
+        [
+          "Hobbies & Stationery",
+          113
+        ],
+        [
+          "Women's Bags",
+          103
+        ],
+        [
+          "Groceries",
+          89
+        ],
+        [
+          "Men's Apparel",
+          83
+        ],
+        [
+          "Men's Shoes",
+          47
+        ],
+        [
+          "Home Appliances",
+          22
+        ],
+        [
+          "Women Accessories",
+          21
+        ],
+        [
+          "Men's Bags & Accessories",
+          21
+        ],
+        [
+          "Gaming",
+          16
+        ],
+        [
+          "Motors",
+          13
+        ],
+        [
+          "Cameras",
+          8
+        ],
+        [
+          "Audio",
+          4
+        ],
+        [
+          "Laptops & Computers",
+          2
+        ]
+      ],
+      "mid": [
+        [
+          "Pet Essentials",
+          148
+        ],
+        [
+          "Tees",
+          119
+        ],
+        [
+          "Bath & Skin Care",
+          109
+        ],
+        [
+          "Others",
+          97
+        ],
+        [
+          "Baby Detergent",
+          84
+        ],
+        [
+          "Pet Grooming Supplies",
+          83
+        ],
+        [
+          "Health & Safety",
+          82
+        ],
+        [
+          "Sweater & Cardigans",
+          66
+        ],
+        [
+          "Sneakers",
+          62
+        ],
+        [
+          "Flats",
+          57
+        ],
+        [
+          "Writing Materials",
+          48
+        ],
+        [
+          "Books and Magazines",
+          47
+        ],
+        [
+          "Glassware & Drinkware",
+          45
+        ],
+        [
+          "Heels",
+          45
+        ],
+        [
+          "Feeding & Nursing",
+          44
+        ],
+        [
+          "Dairy & Eggs",
+          43
+        ],
+        [
+          "Bath",
+          34
+        ],
+        [
+          "Boots",
+          34
+        ],
+        [
+          "Flip Flops",
+          29
+        ],
+        [
+          "Tote Bags",
+          29
+        ],
+        [
+          "Hand Warmers, Hot Water Bags & Ice Bags",
+          28
+        ],
+        [
+          "Hoodies & Sweatshirts",
+          28
+        ],
+        [
+          "Pants",
+          27
+        ],
+        [
+          "Jackets & Outerwear",
+          26
+        ],
+        [
+          "Gift Set & Hampers",
+          26
+        ],
+        [
+          "Diapers & Wipes",
+          23
+        ],
+        [
+          "Garment Care",
+          22
+        ],
+        [
+          "Men's Bags",
+          21
+        ],
+        [
+          "Pet Food & Treats",
+          21
+        ],
+        [
+          "Jeans",
+          21
+        ],
+        [
+          "Rain Gear",
+          20
+        ],
+        [
+          "Moms & Maternity",
+          17
+        ],
+        [
+          "Drawstrings",
+          16
+        ],
+        [
+          "Feeding",
+          16
+        ],
+        [
+          "Kitchenware",
+          13
+        ],
+        [
+          "Shoulder Bags",
+          13
+        ],
+        [
+          "Accessories",
+          12
+        ],
+        [
+          "Seasoning, Staple Foods & Baking Ingredients",
+          12
+        ],
+        [
+          "Sandals & Flip Flops",
+          12
+        ],
+        [
+          "Tops",
+          11
+        ],
+        [
+          "Backpacks",
+          11
+        ],
+        [
+          "Oils, Coolants, & Fluids",
+          10
+        ],
+        [
+          "Dinnerware",
+          10
+        ],
+        [
+          "Console Gaming",
+          10
+        ],
+        [
+          "Wallets & Pouches",
+          9
+        ],
+        [
+          "Shorts",
+          9
+        ],
+        [
+          "Home Maintenance",
+          8
+        ],
+        [
+          "Shoe Care & Accessories",
+          8
+        ],
+        [
+          "Superfoods & Healthy Foods",
+          8
+        ],
+        [
+          "Sinkware",
+          8
+        ],
+        [
+          "Underwear",
+          7
+        ],
+        [
+          "Lingerie & Nightwear",
+          7
+        ],
+        [
+          "Nursery",
+          7
+        ],
+        [
+          "Socks & Stockings",
+          6
+        ],
+        [
+          "Jackets & Sweaters",
+          6
+        ],
+        [
+          "Socks",
+          5
+        ],
+        [
+          "Baby Gear",
+          5
+        ],
+        [
+          "Storage & Organization",
+          4
+        ],
+        [
+          "Home Decor",
+          4
+        ],
+        [
+          "Hats & Caps",
+          4
+        ],
+        [
+          "Pet Toys & Accessories",
+          4
+        ],
+        [
+          "Sets",
+          4
+        ],
+        [
+          "School & Office Supplies",
+          3
+        ],
+        [
+          "Eyewear",
+          3
+        ],
+        [
+          "Loafer & Boat Shoes",
+          3
+        ],
+        [
+          "Beddings",
+          3
+        ],
+        [
+          "Skirts",
+          3
+        ],
+        [
+          "Plus Size",
+          2
+        ],
+        [
+          "Outdoor & Garden",
+          2
+        ],
+        [
+          "Clutches",
+          2
+        ],
+        [
+          "Packaging & Wrapping",
+          2
+        ],
+        [
+          "Additional Accessories",
+          2
+        ],
+        [
+          "Lighting",
+          2
+        ],
+        [
+          "Home Audio & Speakers",
+          2
+        ],
+        [
+          "Car Care & Detailing",
+          2
+        ],
+        [
+          "Party Supplies",
+          2
+        ],
+        [
+          "Handbags",
+          2
+        ],
+        [
+          "Wedges & Platforms",
+          2
+        ],
+        [
+          "Litter & Toilet",
+          2
+        ],
+        [
+          "Watch & Jewelry Organizers",
+          1
+        ],
+        [
+          "Arts & Crafts",
+          1
+        ],
+        [
+          "Home Improvement",
+          1
+        ],
+        [
+          "Paper Supplies",
+          1
+        ],
+        [
+          "Bakeware",
+          1
+        ],
+        [
+          "Babies' Fashion",
+          1
+        ],
+        [
+          "Pet Clothing & Accessories",
+          1
+        ],
+        [
+          "Network Components",
+          1
+        ],
+        [
+          "Traditional Wear",
+          1
+        ],
+        [
+          "Belts & Scarves",
+          1
+        ],
+        [
+          "Moto Riding & Protective Gear",
+          1
+        ],
+        [
+          "Gloves",
+          1
+        ],
+        [
+          "Jumpsuits & Rompers",
+          1
+        ],
+        [
+          "Software",
+          1
+        ],
+        [
+          "Furniture",
+          1
+        ],
+        [
+          "Action Camera",
+          1
+        ],
+        [
+          "Formal",
+          1
+        ],
+        [
+          "Toys & Accessories",
+          1
+        ],
+        [
+          "Earphones, Headphones & Headsets",
+          1
+        ],
+        [
+          "Media Players",
+          1
+        ]
+      ]
+    }
   }
 }
