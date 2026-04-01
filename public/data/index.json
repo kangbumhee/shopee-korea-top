@@ -887,11 +887,19 @@
     "currency": "PHP",
     "supported": true,
     "filter": "locations=Overseas→Korea (5-sort merge)",
-    "collected": "2026-04-01T04:10:28.994Z",
-    "totalProducts": 1903,
-    "totalSellers": 463,
+    "collected": "2026-04-01T05:10:00.736Z",
+    "totalProducts": 4603,
+    "totalSellers": 848,
     "categories": {
       "big": [
+        [
+          "Health & Personal Care",
+          1688
+        ],
+        [
+          "Toys, Games & Collectibles",
+          790
+        ],
         [
           "Babies & Kids",
           426
@@ -913,6 +921,10 @@
           173
         ],
         [
+          "Makeup & Fragrances",
+          149
+        ],
+        [
           "Hobbies & Stationery",
           113
         ],
@@ -927,6 +939,10 @@
         [
           "Men's Apparel",
           83
+        ],
+        [
+          "Sports & Travel",
+          73
         ],
         [
           "Men's Shoes",
@@ -967,8 +983,40 @@
       ],
       "mid": [
         [
+          "Celebrity Merchandise",
+          641
+        ],
+        [
+          "Suncare",
+          473
+        ],
+        [
+          "Hair Care",
+          321
+        ],
+        [
+          "Skin Care",
+          252
+        ],
+        [
+          "Slimming",
+          223
+        ],
+        [
+          "Whitening",
+          193
+        ],
+        [
           "Pet Essentials",
           148
+        ],
+        [
+          "Others",
+          144
+        ],
+        [
+          "Boards & Family Games",
+          142
         ],
         [
           "Tees",
@@ -977,10 +1025,6 @@
         [
           "Bath & Skin Care",
           109
-        ],
-        [
-          "Others",
-          97
         ],
         [
           "Baby Detergent",
@@ -995,12 +1039,24 @@
           82
         ],
         [
+          "Men's Grooming",
+          75
+        ],
+        [
           "Sweater & Cardigans",
           66
         ],
         [
+          "Face Makeup",
+          64
+        ],
+        [
           "Sneakers",
           62
+        ],
+        [
+          "Bath & Body",
+          58
         ],
         [
           "Flats",
@@ -1013,6 +1069,10 @@
         [
           "Books and Magazines",
           47
+        ],
+        [
+          "Golf",
+          45
         ],
         [
           "Glassware & Drinkware",
@@ -1031,12 +1091,24 @@
           43
         ],
         [
+          "Medical Supplies",
+          42
+        ],
+        [
+          "Health Supplements",
+          35
+        ],
+        [
           "Bath",
           34
         ],
         [
           "Boots",
           34
+        ],
+        [
+          "Fragrances",
+          32
         ],
         [
           "Flip Flops",
@@ -1091,11 +1163,23 @@
           20
         ],
         [
+          "Palettes & Makeup Sets",
+          18
+        ],
+        [
           "Moms & Maternity",
           17
         ],
         [
+          "Weather Protection",
+          16
+        ],
+        [
           "Drawstrings",
+          16
+        ],
+        [
+          "Sexual Wellness",
           16
         ],
         [
@@ -1165,6 +1249,10 @@
         [
           "Sinkware",
           8
+        ],
+        [
+          "Collectibles",
+          7
         ],
         [
           "Underwear",
